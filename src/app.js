@@ -7,8 +7,14 @@ let option2 = document.getElementById("option2");
 let option3 = document.getElementById("option3");
 let option4 = document.getElementById("option4");
 
+const question1_Answers = ['Monkey', 'Giraffe', "Seal", "Owl"];
+const question2_Answers = ['Eiffel Tower', 'Shanghai Tower', "Blackpool Tower", "Tokyo Tower"];
+const question3_Answers = ['Emerald', 'Ruby', "Sapphire", "Quartz"];
+const question4_Answers = ['Persimmon', 'Durain', "Tomata", "Peach"];
+const question5_Answers = ['MiG-35', 'Dassault Rafele', "F-15", "Eurofighter"];
+
 // Question Rounds
-function question1() {
+function loadQuestion1() {
   setTimeout(function () {
     alert("Welcome! Test your general knowledge with this awesome quiz.");
   }, 1500);
@@ -23,27 +29,31 @@ function question1() {
   // Incorrect Answer
   document.getElementById("option1").onclick = function () {
     alert("Not quite, try again!");
-    question1();
+    loadQuestion1();
   };
 
   document.getElementById("option2").onclick = function () {
     alert("Not quite, try again!");
-    question1();
+    loadQuestion1();
   };
 
   document.getElementById("option4").onclick = function () {
     alert("Not quite, try again!");
-    question1();
+    loadQuestion1();
   };
 
   // Correct Answer
   document.getElementById("option3").onclick = function () {
-    alert("Correct!");
+    option3.style.backgroundColor="green";
+    setTimout(function () {
+      alert("Correct!");
+    }, 1000);
     question2();
+    option3.style.backgroundColor="none";
   };
 }
 
-function question2() {
+function loadQuestion2() {
   image1.src = "./assets/images/tokyo_tower.jpg";
 
   option1.innerHTML = "Eiffel Tower";
@@ -52,23 +62,29 @@ function question2() {
   option4.innerHTML = "Tokyo Tower";
 
   // Incorrect Answer
-  document.getElementById(
-    "option1",
-    "option2",
-    "option3"
-  ).onclick = function () {
+  document.getElementById("option1").onclick = function () {
     alert("Not quite, try again!");
-    question2();
+    loadQuestion2();
+  };
+
+  document.getElementById("option2").onclick = function () {
+    alert("Not quite, try again!");
+    loadQuestion2();
+  };
+
+  document.getElementById("option3").onclick = function () {
+    alert("Not quite, try again!");
+    loadQuestion2();
   };
 
   // Correct Answer
   document.getElementById("option4").onclick = function () {
     alert("Correct!");
-    question3();
+    loadQuestion3();
   };
 }
 
-function question3() {
+function loadQuestion3() {
   image1.src = "./assets/images/ruby.jpg";
 
   option1.innerHTML = "Emerald";
@@ -77,23 +93,29 @@ function question3() {
   option4.innerHTML = "Quartz";
 
   // Incorrect Answer
-  document.getElementById(
-    "option1",
-    "option3",
-    "option4"
-  ).onclick = function () {
+  document.getElementById("option1").onclick = function () {
     alert("Not quite, try again!");
-    question3();
+    loadQuestion3();
+  };
+
+  document.getElementById("option3").onclick = function () {
+    alert("Not quite, try again!");
+    loadQuestion3();
+  };
+
+  document.getElementById("option4").onclick = function () {
+    alert("Not quite, try again!");
+    loadQuestion3();
   };
 
   // Correct Answer
   document.getElementById("option2").onclick = function () {
     alert("Correct!");
-    question4();
+    loadQuestion4();
   };
 }
 
-function question4() {
+function loadQuestion4() {
   image1.src = "./assets/images/persimmon.jpg";
 
   option1.innerHTML = "Persimmon";
@@ -102,23 +124,29 @@ function question4() {
   option4.innerHTML = "Peach";
 
   // Incorrect Answer
-  document.getElementById(
-    "option2",
-    "option3",
-    "option4"
-  ).onclick = function () {
+  document.getElementById("option2").onclick = function () {
     alert("Not quite, try again!");
-    question4();
+    loadQuestion4();
+  };
+
+  document.getElementById("option3").onclick = function () {
+    alert("Not quite, try again!");
+    loadQuestion4();
+  };
+
+  document.getElementById("option4").onclick = function () {
+    alert("Not quite, try again!");
+    loadQuestion4();
   };
 
   // Correct Answer
   document.getElementById("option1").onclick = function () {
     alert("Correct!");
-    question5();
+    loadQuestion5();
   };
 }
 
-function question5() {
+function loadQuestion5() {
   image1.src = "./assets/images/eurofighter.jpg";
 
   option1.innerHTML = "MiG-35";
@@ -127,20 +155,26 @@ function question5() {
   option4.innerHTML = "Eurofighter";
 
   // Incorrect Answer
-  document.getElementById(
-    "option1",
-    "option2",
-    "option3"
-  ).onclick = function () {
+  document.getElementById("option1").onclick = function () {
     alert("Not quite, try again!");
-    question5();
+    loadQuestion5();
+  };
+
+  document.getElementById("option2").onclick = function () {
+    alert("Not quite, try again!");
+    loadQuestion5();
+  };
+
+  document.getElementById("option3").onclick = function () {
+    alert("Not quite, try again!");
+    loadQuestion5();
   };
 
   // Correct Answer
   document.getElementById("option4").onclick = function () {
     alert("Correct!");
-    question6();
+    loadQuestion6();
   };
 }
 
-question1();
+loadQuestion1();
