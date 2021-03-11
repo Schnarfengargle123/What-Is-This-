@@ -176,34 +176,3 @@ function loadQuestion5() {
     loadQuestion6();
   };
 }
-
-<<<<<<< HEAD
-loadQuestion1();
-=======
-// function question6() {
-//   image1.src = "./assets/images/eurofighter.jpg";
-
-//   option1.innerHTML = "MiG-35";
-//   option2.innerHTML = "Dassault Rafale";
-//   option3.innerHTML = "F-15";
-//   option4.innerHTML = "Eurofighter";
-
-//   // Incorrect Answer
-//   document.getElementById(
-//     "option1",
-//     "option2",
-//     "option3"
-//   ).onclick = function () {
-//     alert("Not quite, try again!");
-//     question5();
-//   };
-
-//   // Correct Answer
-//   document.getElementById("option4").onclick = function () {
-//     alert("Correct!");
-//     question6();
-//   };
-// }
-
-question1();
->>>>>>> 6d63c07747b890f8525af3739f737ce8dbf6ede6
