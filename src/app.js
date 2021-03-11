@@ -143,4 +143,29 @@ function question5() {
   };
 }
 
+// function question6() {
+//   image1.src = "./assets/images/eurofighter.jpg";
+
+//   option1.innerHTML = "MiG-35";
+//   option2.innerHTML = "Dassault Rafale";
+//   option3.innerHTML = "F-15";
+//   option4.innerHTML = "Eurofighter";
+
+//   // Incorrect Answer
+//   document.getElementById(
+//     "option1",
+//     "option2",
+//     "option3"
+//   ).onclick = function () {
+//     alert("Not quite, try again!");
+//     question5();
+//   };
+
+//   // Correct Answer
+//   document.getElementById("option4").onclick = function () {
+//     alert("Correct!");
+//     question6();
+//   };
+// }
+
 question1();
