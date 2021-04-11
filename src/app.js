@@ -49,12 +49,14 @@ function loadQuestion1() {
 
   // Correct Answer
   document.getElementById("option3").onclick = function () {
-    option3.style.backgroundColor = "green";
-    setTimout(function () {
-      alert("Correct!");
-    }, 1000);
+    // option3.style.backgroundColor = "green";
+    alert("Correct!");
+    loadQuestion2();
   };
-  question2();
+  // setTimout(function () {
+  //   alert("Correct!");
+  //   loadQuestion2();
+  // }, 3000);
 }
 
 function loadQuestion2() {
