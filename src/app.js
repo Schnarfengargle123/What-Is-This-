@@ -1,5 +1,5 @@
 // Image
-let image1 = document.getElementById("image");
+let image = document.getElementById("image");
 
 // Buttons
 let option1 = document.getElementById("option1");
@@ -19,7 +19,7 @@ function loadQuestion1() {
     alert("Welcome! Test your general knowledge with this awesome quiz.");
   }, 1500);
 
-  image1.src = "./assets/images/seal.jpg";
+  image.src = "./assets/images/seal.jpg";
 
   option1.innerHTML = "Monkey";
   option2.innerHTML = "Giraffe";
@@ -54,7 +54,7 @@ function loadQuestion1() {
 }
 
 function loadQuestion2() {
-  image1.src = "./assets/images/tokyo_tower.jpg";
+  image.src = "./assets/images/tokyo_tower.jpg";
 
   option1.innerHTML = "Eiffel Tower";
   option2.innerHTML = "Shanghai Tower";
@@ -85,7 +85,7 @@ function loadQuestion2() {
 }
 
 function loadQuestion3() {
-  image1.src = "./assets/images/ruby.jpg";
+  image.src = "./assets/images/ruby.jpg";
 
   option1.innerHTML = "Emerald";
   option2.innerHTML = "Ruby";
@@ -116,7 +116,7 @@ function loadQuestion3() {
 }
 
 function loadQuestion4() {
-  image1.src = "./assets/images/persimmon.jpg";
+  image.src = "./assets/images/persimmon.jpg";
 
   option1.innerHTML = "Persimmon";
   option2.innerHTML = "Durian";
@@ -147,7 +147,7 @@ function loadQuestion4() {
 }
 
 function loadQuestion5() {
-  image1.src = "./assets/images/eurofighter.jpg";
+  image.src = "./assets/images/eurofighter.jpg";
 
   option1.innerHTML = "MiG-35";
   option2.innerHTML = "Dassault Rafale";
@@ -171,8 +171,8 @@ function loadQuestion5() {
   };
 
   // Correct Answer
-  document.getElementById("option4").onclick = function () {
-    alert("Correct!");
-    loadQuestion6();
-  };
+//   document.getElementById("option4").onclick = function () {
+//     alert("Correct!");
+//     loadQuestion6();
+//   };
 }
