@@ -7,11 +7,16 @@ let option2 = document.getElementById("option2");
 let option3 = document.getElementById("option3");
 let option4 = document.getElementById("option4");
 
-const question1_Answers = ['Monkey', 'Giraffe', "Seal", "Owl"];
-const question2_Answers = ['Eiffel Tower', 'Shanghai Tower', "Blackpool Tower", "Tokyo Tower"];
-const question3_Answers = ['Emerald', 'Ruby', "Sapphire", "Quartz"];
-const question4_Answers = ['Persimmon', 'Durain', "Tomata", "Peach"];
-const question5_Answers = ['MiG-35', 'Dassault Rafele', "F-15", "Eurofighter"];
+const question1_Answers = ["Monkey", "Giraffe", "Seal", "Owl"];
+const question2_Answers = [
+  "Eiffel Tower",
+  "Shanghai Tower",
+  "Blackpool Tower",
+  "Tokyo Tower",
+];
+const question3_Answers = ["Emerald", "Ruby", "Sapphire", "Quartz"];
+const question4_Answers = ["Persimmon", "Durain", "Tomata", "Peach"];
+const question5_Answers = ["MiG-35", "Dassault Rafele", "F-15", "Eurofighter"];
 
 // Question Rounds
 function loadQuestion1() {
@@ -44,13 +49,12 @@ function loadQuestion1() {
 
   // Correct Answer
   document.getElementById("option3").onclick = function () {
-    option3.style.backgroundColor="green";
+    option3.style.backgroundColor = "green";
     setTimout(function () {
       alert("Correct!");
     }, 1000);
-    question2();
-    option3.style.backgroundColor="none";
   };
+  question2();
 }
 
 function loadQuestion2() {
@@ -171,8 +175,10 @@ function loadQuestion5() {
   };
 
   // Correct Answer
-//   document.getElementById("option4").onclick = function () {
-//     alert("Correct!");
-//     loadQuestion6();
-//   };
+  document.getElementById("option4").onclick = function () {
+    alert("Correct!");
+    loadQuestion6();
+  };
 }
+
+loadQuestion1();
